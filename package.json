@@ -1,0 +1,13 @@
+{
+  "name": "full-stack-engineering-mastery",
+  "private": true,
+  "description": "A 3-year full-stack, DevOps and architecture course.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "check": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/check-exercises.ps1",
+    "sync-vscode": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/sync-vscode.ps1"
+  }
+}
