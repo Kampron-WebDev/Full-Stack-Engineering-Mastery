@@ -5,7 +5,11 @@
  * ⚠️ This function has 2 bugs. Find and fix them.
  */
 export function formatRelease(version, changes) {
-  const count = changes.size;
-  const list = changes.join(', ');
-  return 'v${version}: ' + count + ' changes (' + list + ')';
+  const count = changes.length;
+  const list = changes.join(", ");
+  return `v${version}: ${count} changes (${list})`;
 }
+
+console.log(
+  formatRelease("2.3.0", ["fix login", "faster search", "dark mode"]),
+);
