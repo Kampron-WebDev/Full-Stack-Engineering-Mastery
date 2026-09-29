@@ -25,5 +25,5 @@ export function previousPhase(phase) {
   return PHASES[(index - 1 + PHASES.length) % PHASES.length];
 }
 
-console.log(nextPhase("design"));
-console.log(previousPhase("deployment"));
+// console.log(nextPhase("design"));
+// console.log(previousPhase("deployment"));

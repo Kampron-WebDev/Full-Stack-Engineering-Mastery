@@ -10,6 +10,6 @@ export function formatRelease(version, changes) {
   return `v${version}: ${count} changes (${list})`;
 }
 
-console.log(
-  formatRelease("2.3.0", ["fix login", "faster search", "dark mode"]),
-);
+// console.log(
+//   formatRelease("2.3.0", ["fix login", "faster search", "dark mode"]),
+// );

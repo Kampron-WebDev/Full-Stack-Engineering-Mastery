@@ -18,4 +18,4 @@ export function courseLength(years) {
   return { years: years, months: years * 12, weeks: years * 48 };
 }
 
-console.log(courseLength(3));
+// console.log(courseLength(3));

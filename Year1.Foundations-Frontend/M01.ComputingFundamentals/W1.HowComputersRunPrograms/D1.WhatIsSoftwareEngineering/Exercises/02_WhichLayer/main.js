@@ -29,4 +29,4 @@ export function layerOf(component) {
   return Object.hasOwn(LAYERS, key) ? LAYERS[key] : "unknown";
 }
 
-console.log(layerOf("dialog"));
+// console.log(layerOf("dialog"));
