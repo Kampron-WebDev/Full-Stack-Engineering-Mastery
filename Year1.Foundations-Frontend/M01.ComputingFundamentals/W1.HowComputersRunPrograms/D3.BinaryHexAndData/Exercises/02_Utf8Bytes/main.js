@@ -2,8 +2,15 @@
  * byteReport('é') → { characters: 1, bytes: 2, hex: 'c3 a9' }
  */
 export function byteReport(text) {
-  // TODO 1: count real characters
-  // TODO 2: encode to UTF-8 bytes with TextEncoder
-  // TODO 3: build the hex string
-  // TODO 4: return { characters, bytes, hex }
+  const characters = [...text].length;
+  const encoder = new TextEncoder();
+  const bytes = encoder.encode(text);
+
+  let hex = [];
+  for (const byte of bytes) {
+    hex.push(byte.toString(16).padStart(2, "0"));
+  }
+  hex = hex.join(" ");
+
+  return { characters, bytes: bytes.length, hex };
 }
